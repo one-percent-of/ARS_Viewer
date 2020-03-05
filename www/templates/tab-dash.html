@@ -1,0 +1,18 @@
+<ion-view view-title="안전주행">
+  <ion-content class="padding">
+      <div class="row">
+      <div class="col col-40" style="text-align:center;">
+      <h3 style="color: {{color}};">{{text}}</h3>
+      <h4>{{data.rotation+data.uturn}}회 위반</h4>
+      </div>
+      <div class="col col-30">
+      <progress max="50" value="{{ data.rotation }}"> </progress>
+      <h5 style="text-align:right;">급회전: {{data.rotation}}</h5>
+      </div>
+      <div class="col col-30">
+      <progress max="50" value="{{ data.uturn }}"> </progress>
+      <h5 style="text-align:right;">급U턴: {{data.uturn}}</h5>
+      </div>
+      </div>
+  </ion-content>
+</ion-view>
